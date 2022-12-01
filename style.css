@@ -1,0 +1,363 @@
+/*  ESTILOS GERAIS (INÍCIO) */
+@font-face {
+  font-family: 'League';
+  src: url(assets/LeagueSpartan-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0;
+  overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c9c9c9;
+}
+
+h1 {
+  font-size: 48pt;
+}
+
+#titulo {
+  font-family: 'Secular One', sans-serif;
+}
+
+h2 {
+  font-size: 30pt;
+}
+
+h3 {
+  font-size: 24pt;
+}
+
+h4 {
+  font-size: 20pt;
+}
+
+p {
+  font-size: 1.3em;
+  max-width: 600px;
+}
+
+/* ESTILOS GERAIS (FIM) */
+/* ESTILO DO HEADER (INÍCIO) */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #529966;
+  color: #fff;
+  width: 100vw;
+  padding: 10px 0;
+}
+
+header img {
+  width: 10vw;
+  height: 10vh;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14pt;
+}
+
+.nav-box a {
+  padding: 15px;
+  text-decoration: none;
+  color: #f3f3f9;
+}
+
+.nav-box a:hover {
+  border: 0px solid rgba(255, 255, 255, 0.66);
+  color: #fff;
+  border-radius: 15px;
+  background-color: #57e07e;
+}
+
+#button-login:hover {
+  transform: scale(1.04);
+}
+
+#button-login {
+  position: relative;
+  margin: 0 40px;
+  width: 120px;
+  height: 60px;
+  border-radius: 8px;
+  border: 0 none transparent;
+  background-color: #57e07e;
+  color: #f3f3f9;
+  cursor: pointer;
+  font-size: 16pt;
+}
+
+/* ESTILO DO HEADER (FIM) */
+/* ESTILO PRIMEIRA SECTION (INÍCIO) */
+
+.intro-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #61b779;
+  color: #fff;
+  min-height: 600px;
+}
+
+.descricao {
+  text-align: start;
+  margin: 0 20px 0 0;
+}
+
+.intro-section img {
+  width: 50vw;
+  height: 50vh;
+}
+
+.project-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.project-section iframe {
+  margin-right: 30px;
+}
+
+.text-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px 0 0;
+}
+
+.text-info h2 {
+  margin-bottom: 20px;
+}
+
+.text-info input {
+  background-color: #57e07e;
+  color: #f3f3f9;
+  padding: 15px 10px;
+  width: 400px;
+  font-size: 16px;
+  border-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+/* ESTILO PRIMEIRA SECTION (FIM) */
+/* ESTILO SEGUNDA SECTION (INÍCIO) */
+
+#types-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  min-height: 800px;
+}
+
+.types-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 700px;
+}
+
+.types-model {
+  display: flex;
+  align-items: center;
+}
+
+.text-info h1 {
+  margin-bottom: 20px;
+}
+
+/* ESTILO SEGUNDA SECTION (FIM) */
+/* ESTILO TERCEIRA SECTION (INÍCIO) */
+
+#map-section {
+  position: relative;
+  background-color: #61b779;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 30px;
+  min-height: 800px;
+}
+
+#map-section h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.map-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.map-search .box-search {
+  min-width: 400px;
+  min-height: 400px;
+  margin: 0 40px;
+}
+
+.box-search {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 4px solid rgba(0, 0, 0, 0.343);
+  border-radius: 15px;
+  color: #fff;
+}
+
+.box-search h3 {
+  text-align: center;
+}
+
+.box-data {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+}
+
+.box-data span {
+  margin: 4px;
+}
+
+.box-data input,
+select {
+  border: 4px solid transparent;
+  outline: none;
+  border-radius: 6px;
+  height: 40px;
+  font-size: 13pt;
+}
+
+.box-data select {
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+#button-search {
+  background-color: #57e07e;
+  color: #f3f3f9;
+  padding: 8px 4px;
+  width: 100%px;
+  font-size: 16px;
+  border-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+/* ESTILO TERCEIRA SECTION (FIM) */
+/* ESTILO QUARTA SECTION (INÍCIO) */
+
+#points-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  min-height: 700px;
+}
+
+/* ESTILO QUARTA SECTION (FIM) */
+/* ESTILO FOOTER SECTION (INÍCIO) */
+
+.footer-box {
+  background-color: #529966;
+  position: relative;
+  display: flex;
+  padding: 30px 40px 50px 30px;
+  align-items: center;
+  justify-content: space-between;
+  color: #f3f3f9;
+}
+
+.idioma {
+  display: flex;
+  align-items: center;
+}
+
+.dados-style {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.dados-style p {
+  margin: 6px;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.logo-footer img {
+  width: 10vw;
+  height: 10vh;
+}
+
+.logo-footer h4 {
+  position: absolute;
+  left: 150px;
+}
+
+#footer-desc {
+  padding-left: 40px;
+  max-width: 300px;
+}
+
+#line {
+  width: 75vw;
+  position: relative;
+  height: 2px;
+  background-color: transparent;
+  bottom: 10px;
+}
+
+.footer-ending {
+  color: #f3f3f9;
+  background-color: #529966;
+  position: relative;
+  display: flex;
+  padding: 5px 0 10px 75px;
+  align-items: center;
+  justify-content: space-between;
+}

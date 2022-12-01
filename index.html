@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <title>Recicle+</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="src/assets/Logo.svg" alt="">
+        <h1 id="titulo">Recicle+</h1>
+      </div>
+      <div class="nav-box">
+        <a href="index.html">INÍCIO</a>
+        <a href="#types-section">TIPOS</a>
+        <a href="#map-section">PROCURAR LOCAL</a>
+        <a href="#points-section">TROCAR PONTOS</a>
+      </div>
+      <a href="pagina2.html"><button id="button-login">ENTRAR</button></a>
+    </header>
+    
+    <div class="intro-section">
+      <div class="descricao">
+        <h1>Reciclagem</h1>
+        <h4>Sua importância e impactos</h4>
+        <p>A reciclagem é o processo de reaproveitamento de materiais descartados. Seu objetivo é reintroduzi-los na cadeia produtiva a fim de que ainda gerem valor e sejam reutilizados, reduzindo-se a produção de lixo, aumentando a preservação dos recursos naturais e melhorando a qualidade de vida das pessoas.</p>
+      </div>
+      <img src="src/assets/Ilustração1.svg" alt="">
+    </div>
+
+    <div class="project-section">
+      <div class="text-info">
+        <h2>Conheça mais sobre a reciclagem</h2>
+        <p>Assista ao vídeo da ONU sobre a Agenda 2030, que se refere a objetivos de desenvolvimento sustentável que devem ser atingidos até o ano de 2030. A Recicle+ visa atingir o objetivo 12: Consumo e produção responsáveis. Confira o vídeo ao lado.</p>
+        <a href="https://www.youtube.com/hashtag/agenda2030" target="blank"><input type="button" value="Confira mais sobre a Agenda 2030 ->"></a>
+      </div> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Z9WxRHtxUjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id="types-section">
+      <div class="types-box">
+        <div class="types-model">
+          <img src="src/assets/Metal.png" alt="">
+          <h5>Metal</h5>
+        </div>
+        <div class="types-model">
+          <img src="src/assets/Papel.png" alt="">
+          <h5>Papel</h5>
+        </div>
+        <div class="types-model">
+          <img src="src/assets/Plastico.png" alt="">
+          <h5>Plástico</h5>
+        </div>
+        <div class="types-model">
+          <img src="src/assets/Vidro.png" alt="">
+          <h5>Vidro</h5>
+        </div>
+        <div class="types-model">
+          <img src="src/assets/Organico.png" alt="">
+          <h5>Orgânico</h5>
+        </div>
+      </div>
+      <div class="text-info">
+        <h1>Tipos de reciclagem disponíveis</h1>
+        <p>Em nosso site você irá se deparar com os simbolos ao lado no mapa de pontos de coleta, então para saber mais sobre eles clique sobre um deles e veja mais informações sobre.</p>
+        <input type="button" value="Veja o mapa ->">
+      </div>
+    </div>
+
+    <div id="map-section">
+      <h1>Mapa de coleta</h1>
+      <div class="map-search">
+        <div class="box-search">
+          <h3>Busque um local</h2>
+          <div class="box-data">
+            <span>Estado</span>
+            <select id="states" onchange="estadoSelec(value)">
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+          </div>
+          <div class="box-data">
+            <span>Cidade</span>
+            <input type="search">
+          </div>
+          
+          <input type="button" value="Buscar local" id="button-search">
+        </div>
+      </div>
+    </div>
+
+    <div id="points-section">
+      <img src="assets/Ilustração2.svg" alt="">
+      <div class="text-info">
+        <h1>Junte pontos</h1>
+        <p>Você pode juntar pontos que ganha quando recicla materiais e esses pontos podem ser trocados por algumas recompensas. Verifique quais recompensas estão disponíveis para você adquirir.</p>
+        <a href="trocarpontos.html"><input type="button" value="Troque seus pontos ->"></a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <div class="dados-style">
+        <div class="logo-footer">
+          <img src="src/assets/Logo.svg" alt="">
+          <h4>Recicle+</h4>
+        </div>
+        <p id="footer-desc">Sua boa ação irá beneficiar não só ao planeta mas a você também. Recicle mais e polua menos.</p>
+      </div>
+      <div class="dados-style">
+        <p><strong>Serviços</strong></p>
+        <p>Reciclagem</p>
+        <p>Mapa de coleta</p>
+        <p>Trocar pontos</p>
+      </div>
+      <div class="dados-style">
+        <p><strong>Outros dados</strong></p>
+        <p>Agenda 2030</p>
+        <p>Vantagens da reciclagem</p>
+      </div>
+      <div class="dados-style">
+        <p><strong>Sobre nós</strong></p>
+        <p>Quem somos</p>
+        <p>Objetivos</p>
+        <p>Nossos pontos</p>
+      </div>
+    </div>
+
+    <div id="line"> </div>
+
+    <div class="footer-ending">
+      <div class="idioma">
+        <img src="#" alt="">
+        <p>Português (BR)</p>
+      </div>
+      <p>Termos e privacidade</p>
+      <p>Segurança</p>
+      <p>@2022 recicle+</p>
+      <div class="social-media">
+        <img src="#" alt="">
+        <img src="#" alt="">
+        <img src="#" alt="">
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function estadoSelec(value){
+        console.log(value)
+    }
+  </script>
+</html>
